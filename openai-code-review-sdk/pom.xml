@@ -135,10 +135,8 @@
                             <include>com.fasterxml.jackson.core:jackson-databind:</include>
                             <include>com.fasterxml.jackson.core:jackson-annotations:</include>
                             <include>org.eclipse.jgit:org.eclipse.jgit:</include>
-                            <include>com.github.plexpt:chatgpt:jar:</include>
+                            <include>com.github.plexpt:chatgpt:</include>
                         </includes>
-<!--                        传递依赖-->
-                        <useTransitiveDependencies>true</useTransitiveDependencies>
                     </artifactSet>
                 </configuration>
             </plugin>
