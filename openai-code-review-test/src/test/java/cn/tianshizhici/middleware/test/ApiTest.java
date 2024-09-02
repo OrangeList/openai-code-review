@@ -13,6 +13,9 @@ public class ApiTest {
 
     @Test
     public void test() {
-        System.out.println("aaaa");
+        System.out.println("aaaa1");
+        System.out.println("aaaa2");
+        System.out.println("aaaa3");
+        System.out.println("aaaa4");
     }
 }
