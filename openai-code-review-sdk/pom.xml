@@ -76,6 +76,12 @@
             <artifactId>chatgpt</artifactId>
             <version>5.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.18</version> <!-- 使用最新的版本号 -->
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -136,6 +142,7 @@
                             <include>com.fasterxml.jackson.core:jackson-annotations:</include>
                             <include>org.eclipse.jgit:org.eclipse.jgit:</include>
                             <include>com.github.plexpt:chatgpt:</include>
+                            <include>cn.hutool:hutool-all:</include>
                         </includes>
                     </artifactSet>
                 </configuration>
