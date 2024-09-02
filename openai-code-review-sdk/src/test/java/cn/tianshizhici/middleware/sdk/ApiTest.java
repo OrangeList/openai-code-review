@@ -12,13 +12,13 @@ public class ApiTest {
     @Test
     public void test() {
         //国内需要代理
-        Proxy proxy = Proxys.http("45.145.154.100", 7890);
+        //Proxy proxy = Proxys.http("127.0.0.1", 7890);
         //socks5 代理
         // Proxy proxy = Proxys.socks5("127.0.0.1", 1080);
 
         ChatGPT chatGPT = ChatGPT.builder()
                 .apiKey("sk-oEd2wR28WEEmcuwd4d740a48Fa534fBa9bFdEfF0A2Fb903b")
-                .proxy(proxy)
+//                .proxy(proxy)
                 .apiHost("https://xiaoai.plus") //反向代理地址
                 .build()
                 .init();
