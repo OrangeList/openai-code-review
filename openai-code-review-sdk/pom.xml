@@ -101,7 +101,7 @@
                     <archive>
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <mainClass>cn.tianshizhici.middleware.sdk.OpenAiCodeReview</mainClass>
+                            <mainClass>cn.tianshizhici.middleware.sdk.OpenAICodeReview</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
