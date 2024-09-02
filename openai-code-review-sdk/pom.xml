@@ -78,8 +78,8 @@
         </dependency>
         <dependency>
             <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>5.8.18</version> <!-- 使用最新的版本号 -->
+            <artifactId>hutool-core</artifactId>
+            <version>5.8.25</version>
         </dependency>
 
     </dependencies>
@@ -141,8 +141,8 @@
                             <include>com.fasterxml.jackson.core:jackson-databind:</include>
                             <include>com.fasterxml.jackson.core:jackson-annotations:</include>
                             <include>org.eclipse.jgit:org.eclipse.jgit:</include>
-                            <include>com.github.plexpt:chatgpt:</include>
-                            <include>cn.hutool:hutool-all:</include>
+                            <include>com.github.plexpt:chatgpt:jar:</include>
+                            <include>cn.hutool:hutool-core:jar:</include>
                         </includes>
                     </artifactSet>
                 </configuration>
