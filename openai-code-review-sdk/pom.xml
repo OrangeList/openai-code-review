@@ -76,26 +76,6 @@
             <artifactId>chatgpt</artifactId>
             <version>5.1.0</version>
         </dependency>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-core</artifactId>
-            <version>5.8.29</version>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>retrofit</artifactId>
-            <version>2.9.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>converter-jackson</artifactId>
-            <version>2.9.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.retrofit2</groupId>
-            <artifactId>adapter-rxjava2</artifactId>
-            <version>2.9.0</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -156,10 +136,6 @@
                             <include>com.fasterxml.jackson.core:jackson-annotations:</include>
                             <include>org.eclipse.jgit:org.eclipse.jgit:</include>
                             <include>com.github.plexpt:chatgpt:jar:</include>
-                            <include>cn.hutool:hutool-core:jar:</include>
-                            <include>com.squareup.retrofit2:retrofit:jar</include>
-                            <include>com.squareup.retrofit2:converter-jackson:jar</include>
-                            <include>com.squareup.retrofit2:adapter-rxjava2:jar</include>
                         </includes>
                     </artifactSet>
                 </configuration>
