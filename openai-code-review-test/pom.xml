@@ -52,6 +52,11 @@
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.github.plexpt</groupId>
+            <artifactId>chatgpt</artifactId>
+            <version>5.1.0</version>
+        </dependency>
 
         <dependency>
             <groupId>cn.tianshizhici.middleware</groupId>
