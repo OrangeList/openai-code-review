@@ -81,7 +81,11 @@
             <artifactId>hutool-core</artifactId>
             <version>5.8.29</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>2.9.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -143,6 +147,7 @@
                             <include>org.eclipse.jgit:org.eclipse.jgit:</include>
                             <include>com.github.plexpt:chatgpt:jar:</include>
                             <include>cn.hutool:hutool-core:jar:</include>
+                            <include>com.squareup.retrofit2:retrofit:jar</include>
                         </includes>
                     </artifactSet>
                 </configuration>
