@@ -137,6 +137,8 @@
                             <include>org.eclipse.jgit:org.eclipse.jgit:</include>
                             <include>com.github.plexpt:chatgpt:jar:</include>
                         </includes>
+<!--                        传递依赖-->
+                        <useTransitiveDependencies>true</useTransitiveDependencies>
                     </artifactSet>
                 </configuration>
             </plugin>
