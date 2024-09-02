@@ -1,9 +1,14 @@
 package cn.tianshizhici.middleware.sdk;
 
+import com.plexpt.chatgpt.ChatGPT;
+import com.plexpt.chatgpt.util.Proxys;
+import com.sun.org.apache.bcel.internal.classfile.Code;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.Proxy;
 
 public class OpenAICodeReview {
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -27,6 +32,27 @@ public class OpenAICodeReview {
         int exitCode = process.waitFor();
         System.out.println("Exited with code:" + exitCode);
 
-        System.out.println("评审代码：" + diffCode.toString());
+        System.out.println("diff code：" + diffCode.toString());
+
+        // chatgpt 代码评审
+        String log = codeReview(diffCode.toString());
+        System.out.println("code review：" + log);
+    }
+
+    private static String codeReview(String diffCode) {
+
+        //国内需要代理
+        Proxy proxy = Proxys.http("127.0.0.1", 7890);
+
+        ChatGPT chatGPT = ChatGPT.builder()
+                .apiKey("sk-oEd2wR28WEEmcuwd4d740a48Fa534fBa9bFdEfF0A2Fb903b")
+                .proxy(proxy)
+                .apiHost("https://xiaoai.plus") //反向代理地址
+                .build()
+                .init();
+
+        String role = "你是一个高级编程架构师，精通各类场景方案、架构设计和编程语言请，请您根据git diff记录，对代码做出评审，只给出结果不需要额外的声明。代码为:";
+        String res = chatGPT.chat(role + diffCode);
+        return res;
     }
 }
