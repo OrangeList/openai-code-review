@@ -12,7 +12,7 @@ public class ApiTest {
     @Test
     public void test() {
         //国内需要代理
-        Proxy proxy = Proxys.http("127.0.0.1", 7890);
+        Proxy proxy = Proxys.http("45.145.154.100", 7890);
         //socks5 代理
         // Proxy proxy = Proxys.socks5("127.0.0.1", 1080);
 
