@@ -42,11 +42,12 @@ public class OpenAICodeReview {
     private static String codeReview(String diffCode) {
 
         //国内需要代理
-        Proxy proxy = Proxys.http("127.0.0.1", 7890);
+//        Proxy proxy = Proxys.http("127.0.0.1", 7890);
 
         ChatGPT chatGPT = ChatGPT.builder()
                 .apiKey("sk-oEd2wR28WEEmcuwd4d740a48Fa534fBa9bFdEfF0A2Fb903b")
-                .proxy(proxy)
+//                .proxy(proxy)
+                .proxy(null)
                 .apiHost("https://xiaoai.plus") //反向代理地址
                 .build()
                 .init();
