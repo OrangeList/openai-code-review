@@ -86,6 +86,16 @@
             <artifactId>retrofit</artifactId>
             <version>2.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>converter-jackson</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>adapter-rxjava2</artifactId>
+            <version>2.9.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -148,6 +158,8 @@
                             <include>com.github.plexpt:chatgpt:jar:</include>
                             <include>cn.hutool:hutool-core:jar:</include>
                             <include>com.squareup.retrofit2:retrofit:jar</include>
+                            <include>com.squareup.retrofit2:converter-jackson:jar</include>
+                            <include>com.squareup.retrofit2:adapter-rxjava2:jar</include>
                         </includes>
                     </artifactSet>
                 </configuration>
