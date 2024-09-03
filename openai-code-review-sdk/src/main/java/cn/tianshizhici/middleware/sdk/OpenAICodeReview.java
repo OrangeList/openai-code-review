@@ -17,6 +17,7 @@ public class OpenAICodeReview {
     public static void main(String[] args) throws IOException, InterruptedException, GitAPIException {
         System.out.println("测试执行");
 
+
         String token = System.getenv("GITHUB_TOKEN");
         if (null == token || token.isEmpty()) {
             throw new RuntimeException("token is null");
@@ -70,6 +71,7 @@ public class OpenAICodeReview {
                 "-1 代码变更分析" +
                 " -1.1 ..." +
                 "-2 代码变更优缺点" +
+                " -2.2 ..." +
                 "...以此类推的分点格式。代码为:";
         String res = chatGPT.chat(role + diffCode);
         return res;
