@@ -18,7 +18,6 @@ public class ApiTest {
 
         ChatGPT chatGPT = ChatGPT.builder()
                 .apiKey("sk-oEd2wR28WEEmcuwd4d740a48Fa534fBa9bFdEfF0A2Fb903b")
-//                .proxy(proxy)
                 .apiHost("https://xiaoai.plus") //反向代理地址
                 .build()
                 .init();
