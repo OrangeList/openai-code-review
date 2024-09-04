@@ -59,6 +59,11 @@ public class OpenAICodeReview {
         logger.info("openai-code-review done!");
     }
 
+    /**
+     * 获取环境值
+     * @param key
+     * @return
+     */
     private static String getEnv(String key) {
         String value = System.getenv(key);
         if (null == value || value.isEmpty()) {
