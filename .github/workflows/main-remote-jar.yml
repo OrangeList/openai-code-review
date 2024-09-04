@@ -3,10 +3,10 @@ name: Build and Run OpenAiCodeReview By Main Maven Jar
 on:
   push:
     branches:
-      - master-close
+      - '*'
   pull_request:
     branches:
-      - master-close
+      - '*'
 
 jobs:
   build:
@@ -24,11 +24,11 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
-      - name: Build with Maven
-        run: mvn clean install
+      - name: Create libs directory
+        run: mkdir -p ./libs
 
-      - name: Copy openai-code-review-sdk JAR
-        run: mvn dependency:copy -Dartifact=cn.tianshizhici.middleware:openai-code-review-sdk:1.0 -DoutputDirectory=./libs
+      - name: Download openai-code-review-sdk JAR
+        run: wget -O ./libs/openai-code-review-sdk-1.0.jar https://github.com/OrangeList/openai-code-review/releases/download/openai/openai-code-review-sdk-1.0.jar
 
       - name: Get repository name
         id: repo-name
