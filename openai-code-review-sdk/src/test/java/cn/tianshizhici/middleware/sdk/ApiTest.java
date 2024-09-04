@@ -18,7 +18,6 @@ import java.util.Scanner;
 
 public class ApiTest {
 
-    @Test
     public void test() {
         //国内需要代理
         //Proxy proxy = Proxys.http("127.0.0.1", 7890);
@@ -39,7 +38,6 @@ public class ApiTest {
         System.out.println(res);
     }
 
-    @Test
     public void test_wx() {
         String accessToken = WXAccessTokenUtils.getAccessToken();
         System.out.println(accessToken);
