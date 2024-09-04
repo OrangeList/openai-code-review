@@ -60,7 +60,7 @@ public class OpenAICodeReview {
     }
 
     /**
-     * 获取环境值
+     * 获取ENV值
      * @param key
      * @return
      */
